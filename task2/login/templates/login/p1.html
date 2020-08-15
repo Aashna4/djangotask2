@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html> 
+    <head>
+        <title>Log in Page</title>
+    </head>
+    <body>
+        <a href={% url 'check' %}>Check information of other users</a>
+
+        <form method='post'>
+            {% csrf_token %}
+            Enter your first name:
+            <input type="text" name="fname"><br>
+            Enter your last name:
+            <input type="text" name="lname"><br>
+            Enter your phone number:
+            <input type="number" name="phno"><br>
+            Enter your email id:
+            <input type="email" name="email"><br>
+            Enter your gender:
+            <input type="text" name="gender"><br>
+            <input type="submit">
+        </form>
+    </body>
+</html>

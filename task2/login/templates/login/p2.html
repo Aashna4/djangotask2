@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html> 
+    <head>
+        <title>Find user</title>
+    </head>
+    <body>
+        <form method="POST">
+            {% csrf_token %}
+            Enter user's email id:
+            <input type="email" name="email">
+            <input type="submit">
+        </form>
+    </body>
+</html>

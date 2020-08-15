@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html> 
+    <head>
+        <title>Result</title>
+    </head>
+    <body>
+       {{ message }} {{ email }}
+        {% if profile %}
+        <ul>
+            <li>First Name = {{ profile.f_name }}</li>
+            <li>Last Name = {{ profile.l_name }}</li>
+            <li>Phone Number = {{ profile.ph_no }}</li>
+            <li>Gender = {{ profile.gender }}</li>
+        </ul>
+        {% endif %}
+    </body>
+</html>
